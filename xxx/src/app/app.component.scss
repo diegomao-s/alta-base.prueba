@@ -1,0 +1,41 @@
+/* filepath: c:\Users\diego\myapp\xxx\src\app\app.component.scss */
+ion-title {
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  --color: #f8f8f8;
+}
+ion-toolbar {
+  background-color: #f8f8f8; // gris claro
+  color: #333; // gris oscuro
+}
+ion-header {
+  background-color: #f8f8f8; // gris claro
+  color: #333; // gris oscuro
+}
+ion-content {
+  background-color: #ffffff; // blanco
+  color: #333; // gris oscuro
+}
+ion-button {
+  background-color: #1976d2; // azul
+  color: #fff; // blanco
+  border-radius: 5px;
+  font-size: 1rem;
+}
+ion-label {
+  color: #1976d2; // azul
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+ion-item-group ion-label {
+  margin-right: 12px;
+}
+
+  ion-item {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 16px;
+  background: #f9f9f9;
+}

@@ -1,0 +1,87 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Fertiapp </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-card>
+      <ion-card-content>
+        <ion-item>
+         <ion-label id="label-dosis" position="floating">Ingrese dosis por hta:</ion-label>
+          <ion-input
+          
+            id="dosis"
+            type="number" 
+            [(ngModel)]="dosis"></ion-input>
+            
+            
+          
+        </ion-item>
+
+        <ion-button expand="full" color="success" (click)="calcular()">Calcular</ion-button>
+
+       
+
+<ion-list>
+  <ion-item-group>
+    <ion-item-divider>
+      <ion-label>para 3 Tolvas</ion-label>
+    </ion-item-divider>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label>Motor 1:</ion-label>
+          <ion-input type="number" [value]="motor1 | number: '1.2-2'" readonly aria-label="Motor 1" placeholder="Resultado Motor 1"></ion-input>
+        </ion-item>
+      
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label>Motor 2:</ion-label>
+          <ion-input type="number" [value]="motor2 | number: '1.2-2'" readonly aria-label="Motor 2" placeholder="Resultado Motor 2"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label>Motor 3:</ion-label>
+          <ion-input type="number" [value]="motor3 | number: '1.2-2'" readonly aria-label="Motor 3" placeholder="Resultado Motor 3"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    
+  </ion-item-group>
+
+  <ion-item-group>
+    <ion-item-divider>
+      <ion-label>para 2 Tolvas</ion-label>
+    </ion-item-divider>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label>Motor 1:</ion-label>
+          <ion-input type="number" [value]="motor2_1 | number: '1.2-2'" readonly aria-label="Motor 1 (2 tolvas)" placeholder="Resultado Motor 1"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label>Motor 2:</ion-label>
+          <ion-input type="number" [value]="motor2_2 | number: '1.2-2'" readonly aria-label="Motor 2 (2 tolvas)" placeholder="Resultado Motor 2"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    
+  </ion-item-group>
+</ion-list>
+
+<ion-item *ngIf="resultado">
+  <ion-label color="danger">{{ resultado }}</ion-label>
+</ion-item>
+
+<!-- ...existing code... -->
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+</ion-app>
