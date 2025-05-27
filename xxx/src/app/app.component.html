@@ -9,16 +9,10 @@
     <ion-card>
       <ion-card-content>
         <ion-item>
-         <ion-label id="label-dosis" position="floating">Ingrese dosis por hta:</ion-label>
-          <ion-input
-          
-            id="dosis"
-            type="number" 
-            [(ngModel)]="dosis"></ion-input>
-            
-            
-          
-        </ion-item>
+        <!-- <ion-label id="label-dosis" position="floating">Ingrese dosis por hta:</ion-label>-->
+         
+         <ion-input  labelPlacement="floating" label="ingrese dosis:" id="dosis" type="number" [(ngModel)]="dosis" ></ion-input>
+            </ion-item>
 
         <ion-button expand="full" color="success" (click)="calcular()">Calcular</ion-button>
 
@@ -33,7 +27,7 @@
       <ion-col>
         <ion-item>
           <ion-label>Motor 1:</ion-label>
-          <ion-input type="number" [value]="motor1 | number: '1.2-2'" readonly aria-label="Motor 1" placeholder="Resultado Motor 1"></ion-input>
+          <ion-input type="number" [value]="motor1 | number: '1.2-2'" readonly aria-label="motor 1" placeholder="Resultado Motor 1"></ion-input>
         </ion-item>
       
       </ion-col>
