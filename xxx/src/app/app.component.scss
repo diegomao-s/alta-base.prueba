@@ -1,1 +1,82 @@
 /* filepath: c:\Users\diego\myapp\xxx\src\app\app.component.scss */
+ion-title {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  justify-content: center;
+}
+
+ion-body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+ion-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+ion-label {
+  font-size: 16px;
+  color: #333;
+  display: block;
+  margin-bottom: 1px;
+  margin-right: 3px;
+}
+ion-input {
+  font-size: 16px;
+  padding: 0px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+ion-item {
+  margin: 10px 0;
+  padding: 0px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+ion-footer {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+
+ion-list {
+  margin: 10px;
+  padding: 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+ion-item-group {
+  margin: 10px;
+  padding: 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+ion-item-divider {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fdfcfc;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.1);
+}
+ion-col {
+  padding: 10px;
+  flex: 1;
+}
+ion-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}

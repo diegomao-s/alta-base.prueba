@@ -19,8 +19,8 @@ export class AppComponent {
   calcular() {
     if (this.dosis !== null && !isNaN(this.dosis)) {
       try {
-        const resultado = this.dosis * 45.45 / 100;
-        const resta = (this.dosis - resultado) / 2;
+        let resultado = this.dosis * 45.45 / 100;
+        let resta = (this.dosis - resultado) / 2;
 
         const resultado2 = this.dosis * 62.5 / 100;
         const resta2 = this.dosis - resultado2;

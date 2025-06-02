@@ -6,17 +6,9 @@
   </ion-header>
 
   <ion-content>
-    <ion-card>
-      <ion-card-content>
-        <ion-item>
-        <!-- <ion-label id="label-dosis" position="floating">Ingrese dosis por hta:</ion-label>-->
-         
-         <ion-input  labelPlacement="floating" label="ingrese dosis:" id="dosis" type="number" [(ngModel)]="dosis" ></ion-input>
-            </ion-item>
-
-        <ion-button expand="full" color="success" (click)="calcular()">Calcular</ion-button>
-
-       
+       <ion-input  labelPlacement="floating" label="ingrese dosis:" id="dosis" type="number" [(ngModel)]="dosis" ></ion-input>
+          
+       <ion-button expand="full" color="sucefull" (click)="calcular()">Calcular</ion-button>
 
 <ion-list>
   <ion-item-group>
@@ -74,8 +66,8 @@
 </ion-item>
 
 <!-- ...existing code... -->
-      </ion-card-content>
-    </ion-card>
+      
+    
   </ion-content>
   <ion-router-outlet id="main-content"></ion-router-outlet>
 </ion-app>
